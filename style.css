@@ -1,0 +1,19 @@
+.item {
+  /* width: fit-content; */
+  padding: 10px;
+  border: 2px solid gray;
+  margin: 0;
+  overflow-wrap: break-word;
+  inline-size: 70%;
+  overflow-wrap: break-word;
+  visibility: hidden;
+}
+
+/* .container {
+  inline-size: 80px;
+  overflow-wrap: break-word;
+} */
+
+/* .container {
+  visibility: hidden;
+} */

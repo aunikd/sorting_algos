@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sorting Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+
+<form id="input-form">
+
+    <label for="input-size">Input Size:</label>
+    <input type="number" id="input-size" name="input-size"><br><br>
+
+    <label for="input-size">Input Array:</label>
+    <input type="text" id="input-array" name="input-size"><br><br>
+    
+    <button type="button" id="genSample" onclick="myfunction()">Generate Numbers</button><br><br>
+
+    <!-- Sort inputs-->
+    <button type="button" id="mergesort" onclick="mergeSort()">Mergesort</button>
+    <button type="button" id="heapsort" onclick="heapSort()">Heapsort</button>
+    <button type="button" id="quicksort1" onclick="quickSort()">Quicksort (Last Element Pivot)</button>
+    <button type="button" id="quicksort2" onclick="quickSort2()">Median Quicksort</button>
+    <button type="button" id="insertion-sort" onclick="insertionSort()">Insertion sort</button>
+    <button type="button" id="selection-sort" onclick="selectionSort()">Selection  sort</button>
+    <button type="button" id="bubble-sort" onclick="bubbleSort()">Bubble sort</button>
+
+  </form>
+
+  <br><br>
+  <div class="container" >
+    <label for="unsorted-input" id="input-label" hidden>Unsorted Input:</label>
+    <div class="item" id="input" >
+      
+    </div>
+  
+    <br><br>
+    <label for="sorted-input" id="output-label" hidden>Sorted Output:</label>
+    <div class="item" id="output"></div>
+
+    <br><br>
+    <label for="time" id="time-label" hidden>Time:</label>
+    <div class="item" id=time></div>
+  
+  </div>
+
+  <script src="generate.js"></script>
+  <script src="sorts.js"></script>
+ 
+</body>
+</html>
