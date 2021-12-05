@@ -12,8 +12,6 @@
     <label for="input-size">Input Size:</label>
     <input type="number" id="input-size" name="input-size"><br><br>
 
-    <label for="input-size">Input Array:</label>
-    <input type="text" id="input-array" name="input-size"><br><br>
     
     <button type="button" id="genSample" onclick="myfunction()">Generate Numbers</button><br><br>
 
@@ -25,6 +23,7 @@
     <button type="button" id="insertion-sort" onclick="insertionSort()">Insertion sort</button>
     <button type="button" id="selection-sort" onclick="selectionSort()">Selection  sort</button>
     <button type="button" id="bubble-sort" onclick="bubbleSort()">Bubble sort</button>
+    <button type="button" id="compare-sort" onclick="compareAlgos()">Compare All</button>
 
   </form>
 
@@ -36,12 +35,20 @@
     </div>
   
     <br><br>
+    <label for="algo-label" id="algo-label" hidden>Algorithm Used:</label>
+    <div class="item" id="algo"></div>
+
+    <br><br>
     <label for="sorted-input" id="output-label" hidden>Sorted Output:</label>
     <div class="item" id="output"></div>
 
     <br><br>
     <label for="time" id="time-label" hidden>Time:</label>
     <div class="item" id=time></div>
+
+    <br><br>
+    <label for="compare" id="compare-label" hidden>Time Comparison:</label>
+    <div class="item" id=compare></div>
   
   </div>
 
